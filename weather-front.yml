@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  weather-front:
+    lang: dockerfile
+    handler: ./weather-front
+    image: cartiilov/weather-front:latest
+

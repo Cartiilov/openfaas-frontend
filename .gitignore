@@ -1,0 +1,5 @@
+template
+build
+node_modules
+react-spa-openfaas
+.secrets
