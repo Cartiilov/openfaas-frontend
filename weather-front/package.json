@@ -2,6 +2,8 @@
   "name": "weather-front",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8080",
+  "homepage": "http://127.0.0.1:8080/function/weather-front/",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",

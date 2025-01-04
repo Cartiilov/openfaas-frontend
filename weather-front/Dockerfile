@@ -1,4 +1,4 @@
-FROM ghcr.io/openfaas/classic-watchdog:0.3.1 AS watchdog
+FROM ghcr.io/openfaas/of-watchdog:0.10.6 AS watchdog
 
 FROM node:20-alpine as build
 
@@ -41,5 +41,4 @@ ENV read_timeout="120s"
 
 HEALTHCHECK --interval=5s CMD [ -e /tmp/.lock ] || exit 1
 
-# CMD ["npm", "start"]
 CMD ["fwatchdog"]
